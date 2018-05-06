@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>idataerr</Title>
+			<Shortcut>idataerr</Shortcut>
+			<Description>用于快速书写实现IDataErrorInfo的代码段</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+			
+			</Declarations>
+			<Code Language="csharp"><![CDATA[ #region IDataErrorInfo Member
+        public string Error
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public string this[string columnName]
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+        #endregion
+	$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
