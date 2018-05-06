@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	
+}
+
+struct TreeNode
+{
+	string val;
+	TreeNode* LeftNode;
+	TreeNode* RightNode;
+};
+
+TreeNode* CreateNode(string val)
+{
+	TreeNode* node = new TreeNode();
+	node->LeftNode = node->RightNode = NULL;
+	node->val = val;
+	return node;
+}
+
+TreeNode* BuildTree()
+{
+	TreeNode* root = CreateNode("+");
+	TreeNode* node1 = CreateNode("+");
+	TreeNode* node2 = CreateNode("a");
+	TreeNode* node3 = CreateNode("*");
+	TreeNode* node4 = CreateNode("b");
+	TreeNode* node5 = CreateNode("c");
+	TreeNode* node6 = CreateNode("*");
+	TreeNode* node7 = CreateNode("+");
+	TreeNode* node8 = CreateNode("g");
+	TreeNode* node9 = CreateNode("*");
+	TreeNode* node10 = CreateNode("f");
+	TreeNode* node11 = CreateNode("d");
+	TreeNode* node12 = CreateNode("e");
+	
+	root->LeftNode = node1;
+	root->RightNode = node6;
+	
+	node1->LeftNode = node2;
+	node1->RightNode = node3;
+	
+	node3->LeftNode = node4;
+	node3->RightNode = node5;
+	
+	node6->LeftNode = node7;
+	node6->RightNode = node8;
+	
+	node7->LeftNode = node9;
+	node7->RightNode  = node10;
+	
+	node9->LeftNode = node11;
+	node9->RightNode = node12;
+	return root;
+}
+

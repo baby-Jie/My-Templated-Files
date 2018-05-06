@@ -1,0 +1,11 @@
+  class UsersViewModel:BindableBase
+    {
+        #region Properties
+        #endregion
+
+        #region Command
+        #endregion
+
+        #region Function
+        #endregion
+    }
