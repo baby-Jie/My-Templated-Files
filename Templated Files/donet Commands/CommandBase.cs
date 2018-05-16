@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace FloatToolBarMini.Commands
+namespace KnowledgeNotesManagment.Commands
 {
     public class CommandBase:ICommand
     {
@@ -23,7 +23,10 @@ namespace FloatToolBarMini.Commands
 
         public bool CanExecute(object parameter)
         {
-            return true;
+            if (null == _canExecute)
+                return true;
+            else
+                return _canExecute();
         }
 
         public event EventHandler CanExecuteChanged;
