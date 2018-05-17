@@ -13,8 +13,6 @@ xmlns:tools="clr-namespace:_3DTools;assembly=3DTools"
 
 
 Prism:
-xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-        
 xmlns:prism="http://www.codeplex.com/prism"
 xmlns:prism="http://www.codeplex.com/CompositeWPF"
 nuget:Get-Project -All | Install-Package Prism.UnityExtensions -Version 4.0.0
