@@ -43,12 +43,11 @@ public $type$ $property$
     set { SetValue($property$Property, value); }
 }
 
-// Using a DependencyProperty as the backing store for $property$.  This enables animation, styling, binding, etc...
-public static readonly DependencyProperty $property$Property = 
-    DependencyProperty.Register("$property$", typeof($type$), typeof($ownerclass$), new PropertyMetadata(default($type$)));
+public static readonly System.Windows.DependencyProperty $property$Property = 
+    System.Windows.DependencyProperty.Register("$property$", typeof($type$), typeof($ownerclass$), new System.Windows.PropertyMetadata(default($type$)));
 
 $end$
-#endregion]]>
+#endregion	DependencyProperty $property$]]>
             </Code>
         </Snippet>
     </CodeSnippet>

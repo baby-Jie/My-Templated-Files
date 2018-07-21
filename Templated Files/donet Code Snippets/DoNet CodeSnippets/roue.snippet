@@ -26,6 +26,8 @@
     </Declarations>
     <Code Language="XML">
       <![CDATA[
+      #region	RoutedEvent
+
       public event $type$ $RoutedEventName$
       {
       add{ AddHandler($RoutedEventName$Event, value); }
@@ -34,6 +36,8 @@
       
       public static readonly RoutedEvent $RoutedEventName$Event=EventManager.RegisterRoutedEvent(
       "$RoutedEventName$",RoutingStrategy.Bubble,typeof($type$),typeof(myclass));
+     
+     #endregion	RoutedEvent
       ]]>
     </Code>
   </Snippet>

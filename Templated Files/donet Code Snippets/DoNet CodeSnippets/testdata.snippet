@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>propnt</Title>
+			<Shortcut>testdata</Shortcut>
+			<Description>用于快速书写实现student data 的代码段</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+			
+			</Declarations>
+			<Code Language="csharp"><![CDATA[#region student data
+            private List<Student> _students = new List<Student>();
+            _students.Add(new Student() {Name = "smx", Id = 1, Score = 88});
+            _students.Add(new Student() {Name = "xyj", Id = 2, Score = 99});
+            _students.Add(new Student() {Name = "xpz", Id = 3, Score = 66});
+            _students.Add(new Student() {Name = "xth", Id = 4, Score = 55});
+            _students.Add(new Student() {Name = "wx", Id = 5, Score = 77 });
+            _students.Add(new Student() {Name = "wg", Id = 6, Score = 44 });
+            _students.Add(new Student() {Name = "hhr", Id = 7, Score = 33 });
+
+#endregion
+
+	$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
