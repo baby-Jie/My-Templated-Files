@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>timer1</Title>
+			<Shortcut>timer1</Shortcut>
+			<Description>用于快速书写实现timer的代码段</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>TimerName</ID>
+					<ToolTip>属性类型</ToolTip>
+					<Default>TimerName</Default>
+				</Literal>
+				<Literal>
+					<ID>TimerType</ID>
+					<ToolTip>属性类型</ToolTip>
+					<Default>Timer</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[
+#region Timer $TimerName$
+
+private $TimerType$ _$TimerName$;
+
+public void Start$TimerName$()
+{
+	_$TimerName$.Enabled = true;
+             _$TimerName$.Start();
+}
+ private void Stop$TimerName$()
+        {
+            _$TimerName$.Stop();
+            _$TimerName$.Enabled = false;
+        }
+
+        private void Dispose$TimerName$()
+        {
+            if (_$TimerName$ != null)
+            {
+                Stop$TimerName$();
+                _$TimerName$.Dispose();
+                _$TimerName$ = null;
+            }
+        }
+
+#endregion Timer $TimerName$
+
+	$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
