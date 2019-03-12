@@ -15,7 +15,7 @@
 				<Literal>
 					<ID>type</ID>
 					<ToolTip>属性类型</ToolTip>
-					<Default>int</Default>
+					<Default>RelayCommand</Default>
 				</Literal>
 				<Literal>
 					<ID>property</ID>
@@ -37,11 +37,7 @@ private $type$ _$property$;
 	{
 		get 
 {
-if (null == _$property$)
-{
-_$property$ = new CommandBase(()=>{});
-}
- return _$property$;
+ return _$property$ ?? new $type$(()=>{});
 }	
 	}
 
