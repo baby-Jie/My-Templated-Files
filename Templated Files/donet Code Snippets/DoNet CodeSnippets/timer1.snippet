@@ -28,18 +28,37 @@
 
 private $TimerType$ _$TimerName$;
 
+ /// <summary>
+        /// 初始化 $TimerName$ 定时器
+        /// </summary>
+        private void Initial$TimerName$()
+        {
+            $TimerName$ = new Timer(1000);
+            $TimerName$.AutoReset = true;
+            $TimerName$.Elapsed += $TimerName$OnElapsed;
+        }
+
+/// <summary>
+        /// 定时器 $TimerName$ 开始定时
+        /// </summary>
 public void Start$TimerName$()
 {
 	_$TimerName$.Enabled = true;
              _$TimerName$.Start();
 }
 
+/// <summary>
+        /// 定时器 $TimerName$ 停止定时
+        /// </summary>
  private void Stop$TimerName$()
         {
             _$TimerName$.Stop();
             _$TimerName$.Enabled = false;
         }
 
+/// <summary>
+        /// 销毁定时器 $TimerName$
+        /// </summary>
         private void Dispose$TimerName$()
         {
             if (_$TimerName$ != null)
@@ -50,6 +69,11 @@ public void Start$TimerName$()
             }
         }
 
+/// <summary>
+        /// 定时器 $TimerName$ 定时事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 private void $TimerName$OnElapsed(object sender, ElapsedEventArgs e)
 {
 }
