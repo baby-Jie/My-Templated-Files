@@ -31,20 +31,9 @@
 
 			<Code Language="csharp"><![CDATA[#region CommandProperty $property$
 
-private $type$ _$property$;
+				private $type$ _$property$;
 
-	public $type$ $property$
-	{
-		get 
-{
-if (null == _$property$)
-{
-_$property$ = new RelayCommand(()=>{});
-}
- return _$property$;
-}	
-	}
-
+				public $type$ $property$ => _$property$ ?? (_$property$ = new $type$(()=>{}));
 #endregion
 	$end$]]>
 			</Code>
