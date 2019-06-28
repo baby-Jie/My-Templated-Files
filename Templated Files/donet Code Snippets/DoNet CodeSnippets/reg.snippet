@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+	 <Header>
+    <Title>生成method region代码段</Title>
+    <Author>smx</Author>
+    <Shortcut>reg</Shortcut>
+    <Description>生成普通region</Description>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>type</ID>
+        <ToolTip>属性类型</ToolTip>
+        <Default>EventHandler</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="XML">
+      <![CDATA[
+
+	#region $type$
+	#endregion $type$	
+
+      ]]>
+    </Code>
+  </Snippet>
+	</CodeSnippet>
+</CodeSnippets>
