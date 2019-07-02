@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+	 <Header>
+    <Title>生成普通region代码段</Title>
+    <Author>衆尋</Author>
+    <Shortcut>reg3</Shortcut>
+    <Description>生成普通region</Description>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>type</ID>
+        <ToolTip>属性类型</ToolTip>
+        <Default>EventHandler</Default>
+      </Literal>
+      <Literal>
+        <ID>RoutedEventName</ID>
+        <ToolTip>属性名</ToolTip>
+        <Default>MyEvent</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="XML">
+      <![CDATA[
+
+	#region Constructors
+	#endregion Constructors
+
+	 #region  Fields
+	#endregion Fields
+
+    	#region Properties
+	#endregion Properties
+
+	#region Methods
+	#endregion Methods
+
+	#region EventHandlers
+	#endregion EventHandlers
+      ]]>
+    </Code>
+  </Snippet>
+	</CodeSnippet>
+</CodeSnippets>
